@@ -4,6 +4,8 @@ import FavoritesView from "../views/FavoritesView.vue";
 import SignupView from "../views/SignupView.vue";
 import LoginView from "../views/LoginView.vue";
 import LogoutView from "../views/LogoutView.vue";
+import ChampionsIndex from "../views/ChampionsIndex.vue";
+import ItemsIndex from "../views/ItemsIndex.vue";
 const routes = [
   {
     path: "/",
@@ -22,6 +24,16 @@ const routes = [
     path: "/favorites",
     name: "favorites",
     component: FavoritesView,
+  },
+  {
+    path: "/champions",
+    name: "champions",
+    component: ChampionsIndex,
+  },
+  {
+    path: "/items",
+    name: "items",
+    component: ItemsIndex,
   },
   { path: "/signup", name: "signup", component: SignupView },
   { path: "/login", name: "login", component: LoginView },
