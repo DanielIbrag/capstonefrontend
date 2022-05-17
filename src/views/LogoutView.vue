@@ -11,5 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="logout"></div>
+  <div class="p-3 mb-2 bg-dark text-white">
+    <div class="logout"></div>
+  </div>
 </template>

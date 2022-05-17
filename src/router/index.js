@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import FavoritesView from "../views/FavoritesView.vue";
+import NewFavorite from "../views/NewFavorite.vue";
+import ViewFavorites from "../views/ViewFavorites.vue";
 import SignupView from "../views/SignupView.vue";
 import LoginView from "../views/LoginView.vue";
 import LogoutView from "../views/LogoutView.vue";
@@ -21,9 +22,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
   {
-    path: "/favorites",
-    name: "favorites",
-    component: FavoritesView,
+    path: "/newfavorite",
+    name: "newfavorite",
+    component: NewFavorite,
+  },
+  {
+    path: "/ViewFavorites",
+    name: "ViewFavorites",
+    component: ViewFavorites,
   },
   {
     path: "/champions",

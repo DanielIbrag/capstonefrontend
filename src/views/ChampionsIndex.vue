@@ -22,12 +22,17 @@ export default {
 <template>
   <div class="p-3 mb-2 bg-dark text-white">
     <div class="champions-index">
-      <h1>All Champions</h1>
+      <h1><b>All Champions</b></h1>
       <div class="container">
         <div class="row">
           <div v-for="champion in champions" v-bind:key="champion.id" class="col-3">
-            <h2>{{ champion.Name }}</h2>
-            <img style="height: 300px; width: 200px" v-bind:src="champion.Image" v-bind:alt="champion.name" />
+            <h2 class="mt-5">{{ champion.Name }}</h2>
+            <img
+              class="rounded"
+              style="height: 300px; width: 200px"
+              v-bind:src="champion.Image"
+              v-bind:alt="champion.name"
+            />
           </div>
         </div>
       </div>
