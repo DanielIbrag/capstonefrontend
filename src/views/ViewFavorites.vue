@@ -31,7 +31,8 @@ export default {
     <div class="favorites-index">
       <h1>All Favorites</h1>
       <div v-for="favorite in favorites" v-bind:key="favorite.id">
-        <button v-on:click="destroyFavorite(favorite)">Destroy Favorite</button>
+        <!-- <button v-on:click="destroyFavorite(favorite)">Destroy Favorite</button> -->
+
         <div class="container">
           <div class="row">
             <div class="col-5 float-right text-right">
@@ -92,7 +93,29 @@ export default {
             </div>
           </div>
         </div>
+        <div class="custom-button center" v-on:click="destroyFavorite(favorite)">
+          <h4 class="center">Destroy Favorite</h4>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<style>
+.custom-button {
+  width: 250px;
+  height: 75px;
+  color: antiquewhite;
+  background-color: teal;
+  border: solid 3px #ffffff;
+  border-radius: 8px;
+}
+.custom-button:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
+.center {
+  margin: auto;
+  padding: 10px;
+}
+</style>

@@ -35,7 +35,7 @@
               <a class="nav-link" href="/champions">Champions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/items">items</a>
+              <a class="nav-link" href="/items">Items</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/signup">Signup</a>

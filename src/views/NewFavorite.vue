@@ -287,7 +287,10 @@ export default {
                   </div>
                 </div>
               </div>
-              <button v-on:click="createFavorite()">Create Favorite</button>
+              <!-- <button v-on:click="createFavorite()">Create Favorite</button> -->
+              <div class="custom-button center" v-on:click="createFavorite()">
+                <h4 class="center">Create Favorite</h4>
+              </div>
             </div>
           </div>
         </div>
